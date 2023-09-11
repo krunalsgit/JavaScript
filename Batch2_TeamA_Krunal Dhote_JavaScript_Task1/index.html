@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fevicon For  WebPage -->
+    <link rel="shortcut icon" href="Images/Krunal Dhote.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Krunal Dhote Task 1</title>
+
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <!-- Basic Details Form  -->
+        <h1 class="text-center">Student Form</h1>
+        <form action="">
+            <div class="row mt-5">
+                <div class="mb-3  col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">First Name</label>
+                    <input type="text" class="form-control" value="Krunal" required>
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">Last name</label>
+                    <input type="text" class="form-control" value="Dhote" required>
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">Date Of Birth</label>
+                    <input type="date" class="form-control" value="2001-10-09" required>
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" value="krunal.d@shaligraminfotech.com" required>
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">Address</label>
+                    <input type="" class="form-control" value="Amravati" required>
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">Graduation Year</label>
+                    <input type="month" class="form-control" value="2023-06">
+                </div>
+            </div>
+    
+        <hr>
+
+
+
+        <!-- Education Field  -->
+
+        <div class="row mt-5">
+            <div class="col-6">
+                <h2>Education:</h2>
+            </div>
+            <div class="col-6">
+                <button type="button" class="addBtn border-0 rounded-circle bg-dark float-end" onclick="Add()"><i
+                        class="text-white fa-solid fa-plus"></i></button>
+
+                <!-- By clicking on + button Add function will be call  -->
+            </div>
+        </div>
+
+
+            <!-- This are the Static Row -->
+
+            <div id="form"> <!-- Id is used for append new child -->
+                <div class="row mt-2 ">
+                    <div class="mb-3  col">
+                        <label for="formGroupExampleInput" class="form-label">Degree/Board</label>
+                        <input type="text" class="form-control" value="10th" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">School/Colege</label>
+                        <input type="text" class="form-control" value="N.T.R. Highschool warud" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">Start Date</label>
+                        <input type="month" value="2016-06" class="form-control" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">Passout Year</label>
+                        <input type="month" value="2017-05" class="form-control" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">Percentage</label>
+                        <input type="number" value="82.60" class="form-control" min="0" max="100"
+                            placeholder="Don't use % sign" step="0.01" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">Backlog</label>
+                        <input type="number" value="0" class="form-control" min="0" placeholder="If Any">
+                    </div>
+                    <div class="mb-3 col text-center">
+                        <button title="I'm Disable" type="button" class="border-0 rounded-circle bg-dark" disabled>
+                            <!-- Button are disable because it is static data  -->
+                            <i class="text-white fa-solid fa-minus"></i></button>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="mb-3  col">
+                        <label for="formGroupExampleInput" class="form-label">Degree/Board</label>
+                        <input type="text" class="form-control" value="12th" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">School/Colege</label>
+                        <input type="text" class="form-control" value="M.F.M. Warud" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">Start Date</label>
+                        <input type="month" value="2018-06" class="form-control" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">Passout Year</label>
+                        <input type="month" value="2019-05" class="form-control" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">Percentage</label>
+                        <input type="number" value="63.54" class="form-control" min="0" max="100"
+                            placeholder="Don't use % sign" step="0.01" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="formGroupExampleInput" class="form-label">Backlog</label>
+                        <input type="number" value="0" class="form-control" min="0" placeholder="If Any">
+                    </div>
+                    <div class="mb-3 col text-center">
+                        <button title="I'm Disable" type="button" class="border-0 rounded-circle bg-dark" disabled>
+                            <!-- Button are disable because it is static data  -->
+                            <i class="text-white fa-solid fa-minus"></i></button>
+                    </div>
+                    <hr>
+                </div>
+
+                <!-- Row Will be Add Here After Clicking on Add Button -->
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Script is Linked Here  -->
+
+    <script src="JS/script.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
